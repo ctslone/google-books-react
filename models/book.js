@@ -15,4 +15,6 @@ const bookSchema = new Schema({
     link: {type: String}
 })
 
-module.exports = bookSchema;
+const Book = mongoose.model("Book", bookSchema);
+
+module.exports = Book;
