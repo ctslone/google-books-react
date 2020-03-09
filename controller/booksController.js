@@ -10,6 +10,16 @@ module.exports = {
                 link: "http://books.google.com/books?id=sazytgAACAAJ&dq=title:The+Hunger+Games&hl=&source=gbs_api",
                 title: "The Hunger Games"
               }
-        )
+        ).catch(err => res.status(422).json(err));
+    },
+    getAllSavedBooks: function(req, res) {
+        // get all saved books from db
+        db.Book.find();
+    },
+    saveBook: function(req, res) {
+        // save a book to the db
+    },
+    deleteBook: function(req, res) {
+        // delete a books from db
     }
 }

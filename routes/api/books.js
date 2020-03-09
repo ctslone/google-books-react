@@ -6,6 +6,11 @@ router.post("/test", (req, res) => {
     booksController.test()
 })
 
+router.get("/", (req, res) => {
+    // show all saved books
+    booksController.getAllSavedBooks()
+})
+
 module.exports = router
 
 // localhost:3001/api/books/...
