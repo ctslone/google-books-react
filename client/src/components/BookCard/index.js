@@ -13,7 +13,8 @@ function BookCard(props) {
             <Card.Title>{props.title}</Card.Title>
                     <Card.Text>{props.description}
                     </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
+                <Button variant="primary" className="mr-2">Delete</Button>
+                <Button variant="primary">View</Button>
             </Card.Body>
         </Card>
     )
