@@ -9,8 +9,8 @@ function MainNav(props) {
         <Navbar bg="dark" variant="dark">
             <Navbar.Brand href="/">Google Books</Navbar.Brand>
             <Nav className="mr-auto">
-                <Nav.Link href="">Search</Nav.Link>
-                <Nav.Link href="">Saved</Nav.Link>
+                <Nav.Link href="/search">Search</Nav.Link>
+                <Nav.Link href="/saved">Saved</Nav.Link>
             </Nav>
         </Navbar>
     )

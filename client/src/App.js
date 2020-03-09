@@ -1,15 +1,18 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import "./App.css";
 
 import MainNav from "./components/MainNav"
+import SavedPage  from "./pages/saved"
 
-class App extends Component {
-  render() {
+function App () {
     return (
-      <MainNav/>
+      <Router>
+        <Route exact path="/" component={MainNav}/>
+        {/* <Route exact path="/search" component={}/> */}
+        <Route exact path="/saved" component={SavedPage}/>
+      </Router>
     );
-  }
 }
 
 export default App;
