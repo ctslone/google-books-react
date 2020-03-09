@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import MainNav from "../components/MainNav"
+import MainNav from "../components/MainNav";
+import BookCard from "../components/BookCard";
 
 class SavedPage extends Component {
 
@@ -8,7 +9,7 @@ class SavedPage extends Component {
             <div>
                 <MainNav />
                 <div className="container">
-                    <h2>HEY</h2>
+                    <BookCard/>
                 </div>
             </div>
         )
